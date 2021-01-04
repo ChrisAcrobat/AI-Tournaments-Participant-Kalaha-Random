@@ -1,5 +1,5 @@
 'use strict'
-function play(messageEvent){
+function tock(messageEvent){
 	let length = (messageEvent.data.length/2) - 2;
 	let index;
 	do{
@@ -8,6 +8,6 @@ function play(messageEvent){
 	postMessage(index);
 }
 onmessage = messageEvent => {
-	onmessage = play;
+	onmessage = tock;
 	postMessage(null);
 };
